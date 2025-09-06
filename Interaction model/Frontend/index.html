@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Chat Interface with Reviews</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <section class="video-capture-section">
+      <h2>Beauty🥰</h2>
+      <video id="video-preview" autoplay muted playsinline width="480" height="360"></video>
+      <div class="controls">
+      <!-- <button id="start-record-btn">Start Recording</button>
+      <button id="stop-record-btn" disabled>Stop Recording</button> -->
+      </div>
+      <a id="download-link" style="display:none;" download="recorded-video.webm">Download Video</a>
+    </section>
+
+  <main class="container">
+    <section class="chat-section">
+      <h1>Therapist😉</h1>
+      <div id="chat-window" class="chat-window"></div>
+      <form id="chat-form" class="chat-form">
+        <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="review-section">
+      <h2>Reviews</h2>
+      <form id="review-form" class="review-form">
+        <textarea id="review-input" rows="3" placeholder="Hope this made you happy,Right!..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="reviews-container" class="reviews-container">
+        <!-- User reviews will appear here -->
+      </div>
+    </section>
+  
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
