@@ -1,0 +1,94 @@
+# AI Chat Assistant with Real-Time Emotion Recognition
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
+
+This project is a modern *AI Chat Assistant* web application featuring real-time *emotion recognition* through webcam video, integrated seamlessly with an AI backend powered by the Gemini API. It aims to provide users with not only conversational assistance but also emotional support by detecting facial expressions and adapting responses accordingly.
+
+The assistant helps users feel understood and connected, addressing the subtle emotional blends beyond just happiness, such as loneliness or confusion. It incorporates a user review system to collect feedback for continuous improvement.
+
+## Features
+
+- *Interactive chat interface:* Users can type messages and get context-aware replies from the AI assistant.
+- *Real-time emotion tracking:* Uses face-api.js to detect facial emotions from webcam video and display dominant emotion.
+- *Backend API proxy:* Node.js Express server securely connects with Google Gemini API protecting API keys.
+- *Chat history management:* Maintains conversation context for coherent, relevant responses.
+- *User review section:* Allows users to submit feedback directly on the platform.
+- *Robust error handling:* Gracefully handles API and connection errors.
+- *Customizable AI responses:* Set specific replies based on user instructions or detected emotion.
+
+## Architecture
+
+### Frontend
+
+- *Technologies:* HTML5, CSS3, JavaScript (ES6+), face-api.js for emotion recognition.
+- *Functions:* Captures webcam video; detects and displays emotions; manages chat UI and user interactions; communicates with backend API.
+
+### Backend
+
+- *Technologies:* Node.js, Express, dotenv, node-fetch.
+- *Functions:* Acts as a secure proxy to the Gemini AI API; processes chat history for context-aware responses; hides API keys from client; implements session-based chat context (can be extended for multi-user).
+
+### Workflow
+
+1. User inputs message in the chat UI.
+2. Emotion detection runs continuously via webcam feed.
+3. Chat history including user messages and system instructions is sent to the backend.
+4. Backend forwards the request to Gemini API and retrieves AI-generated response.
+5. AI response is returned to frontend and displayed.
+6. User can submit reviews enhancing feedback loop.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- npm or yarn
+- Google Cloud account with access to Gemini API and API key
+
+### Setup
+
+1. Clone the repository:
+git clone https://github.com/your-username/ai-chat-emotion-assistant.git
+cd ai-chat-emotion-assistant                                                                 
+                                                                                                                                                                                   
+2. Install backend dependencies:
+cd backend
+npm install                                                 
+                                                                                                                                                                                   
+GEMINI_API_KEY=your_api_key_here
+4. Start the backend server:
+                                                                                                                                                                                   
+node backend.js
+5. Open index.html in your preferred browser (or set up a simple HTTP server).
+
+## Usage
+
+- Allow camera permission for emotion detection.
+- Type your queries or messages into the chat form.
+- See real-time AI replies and emotion status updates.
+- Submit your feedback through the review section.
+
+## Future Development
+
+- Integrate more advanced emotion AI models for nuanced understanding.
+- Provide multimodal emotional support (audio, text, video).
+- Persistent chat history with database support.
+- Multi-user, authenticated experience with profiles.
+- Sentiment analysis and mood tracking dashboards.
+- Expand language support and accessibility features.
+
+## Contributing
+
+Contributions are welcome! Please fork the repo and create a pull request with your improvements. For major changes, open an issue first to discuss ideas.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Google Gemini API](https://cloud.google.com/generative-ai)
+- [face-api.js](https://github.com/justadudewhohacks/face-api.js)
+- Open source communities and contributors who made this project possible.                                                                                                                                                                                   
