@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const input = userText.toLowerCase().trim();
 
   // Exact instruction match
-  if (input === 'hello' || input === 'hi') {
+  if (input === 'hello' || input === 'hi'||input ==='hey' || input === 'is anyone there') {
     return 'Hello! What happended it seems like you not looking well and having some anxiety ?';
   }
   
@@ -94,3 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
   return "I'm not sure about that, but I'm learning!";
 }
 });
+
