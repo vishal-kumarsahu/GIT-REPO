@@ -1,0 +1,24 @@
+# Contributing to AI Powered Emotion Sensing
+
+Thank you for your interest in contributing! Contributions help make this project better for everyone. Whether you’re reporting bugs, improving documentation, or contributing new features, your involvement is appreciated.
+
+## How to Contribute
+
+### Reporting Bugs
+If you find a bug or unexpected behavior:
+1. Check the existing [Issues](https://github.com/your-username/AI-Powered-Emotion-Sensing/issues) to see if it’s already been reported.
+2. If not, open a new issue and include:
+   - A clear description of the bug.
+   - Steps to reproduce it.
+   - Expected vs. actual behavior.
+   - Any screenshots, error logs, or system details that might help.
+
+### Suggesting Enhancements
+Have an idea for improving the project? Create a new issue under the **Enhancement** category and describe:
+- The feature or improvement you’re proposing.
+- Why it would be useful.
+- How it could be implemented (if you have ideas).
+
+### Submitting Code Changes
+1. Fork the repository and clone your fork.
+2. Create a new branch for your changes:
